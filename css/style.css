@@ -65,6 +65,7 @@ ul::after {
 	text-transform: uppercase;
 	font-size: 14px;
 	color: #fff;
+	cursor: pointer;
 }
 
 
@@ -112,11 +113,13 @@ ul::after {
 }
 
 .nav-menu {
+	margin-right: 30px;
 	justify-content: space-between;
 }
 
 .nav-menu__item {
 	padding: 35px 0;
+	/*flex: 1 1 auto;*/
 }
 
 
@@ -274,17 +277,6 @@ ul::after {
 	justify-content: flex-end;
 }
 
-/*.download-section__image {
-	display: block;
-	position: absolute;
-	width: 100%;
-	max-width: 700px;
-	width: 700px;
-	height: 700px;
-	flex: 1 1 55%;
-	background: url(../img/download-section/img.png) center center no-repeat;
-}*/
-
 .download-section__get-started {
 	flex-basis: 33%;
 	margin: 220px 0;
@@ -294,6 +286,7 @@ ul::after {
 
 .news {
 	justify-content: space-between;
+	padding: 90px 0;
 }
 
 .news-card {
@@ -324,23 +317,97 @@ ul::after {
 	justify-content: space-between;
 }
 
-.news-card__date {
-	
-}
+.news-card__date {}
 
-.news-card__comment {
-	
-}
+.news-card__comment {}
 
 /* 6. contact */
 
-.contact {}
+.contact {
+	padding: 85px 0 70px 0;
+	background: url(../img/contact/background.jpg) center center no-repeat;
+	background-size: cover;
+	color: #fff;
+}
+
+.contact-form {
+	display: block;
+	max-width: 630px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.contact__title,
+.contact__text {
+	text-align: center;
+}
+
+.contact__text {
+	padding: 0;
+	margin: 28px 0 63px 0;
+}
+
+.contact__userdata-wrapper {
+	justify-content: space-between;
+}
+
+.contact__username-label,
+.contact__email-label {
+	flex-basis: 310px;
+}
+
+.contact__username-input,
+.contact__email-input,
+.contact__message-input,
+.contact__message-input {
+	width: 100%;
+	padding: 18px 30px;
+}
+
+/*.contact__email-label {}
+
+.contact__email-input {}
+
+.contact__message-label {}*/
+
+.contact__message-input {
+	padding: 30px;
+	margin: 20px 0 30px 0;
+}
+
+.contact__username-input,
+.contact__message-input,
+.contact__email-input {
+	border: 1px none;
+	border-radius: 7px;
+}
+
+.contact-button {
+	display: block;
+	margin: 0 auto;
+	background: #17152b;
+	border: 1px solid #fff;
+}
 
 /* 7. footer */
 
-.footer__wrapper {}
+.footer__wrapper {
+	background: #42b549;
+}
 
-.footer-contacts {}
+.footer {
+	padding: 90px 0 50px 0;
+	justify-content: space-between;
+	color: #fff;
+}
+
+.footer-contacts {
+	flex-basis: 280px;
+}
+
+.footer-list__item a {
+	color: #fff;
+}
 
 .footer-contacts__phones,
 .footer-contacts__email,

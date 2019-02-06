@@ -189,19 +189,20 @@
 			<p class="contact__text">
 				Contact us by phone or gmail to order new services, track orders and get customer service or tech support. 
 			</p>
-			<div class="contact__userdata-wrapper">
+			<div class="contact__userdata-wrapper flex">
 				<label class="contact__username-label">
-					<input type="text" placeholder="Your Name">
+					<input type="text" placeholder="Your Name" class="contact__username-input">
 				</label>
 				<label class="contact__email-label">
-					<input type="email" placeholder="Email Adress">
+					<input type="email" placeholder="Email Adress" class="contact__email-input">
 				</label>
 			</div>
-			<label class="contact__message-label">
-				<input type="text" placeholder="Message..." size="50">
-			</label>
+			<!-- <label class="contact__message-label">
+				<input type="text" placeholder="Message..." size="50" class="contact__message-input">
+			</label> -->
+			<textarea name="contact-text-area" id="#" cols="30" rows="10" class="contact__message-input" placeholder="Message..."></textarea>
 			<label>
-				<input type="submit" value="send" class="button">
+				<input type="submit" value="send" class="button contact-button">
 			</label>
 		</form>
 
