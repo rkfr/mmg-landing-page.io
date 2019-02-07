@@ -5,6 +5,10 @@
 		padding-left: 15px;
 		padding-right: 15px;
 	}
+
+	.news-card {
+		margin: 8px;
+	}
 }
 
 @media screen and (max-width: 1030px) {

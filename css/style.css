@@ -66,7 +66,6 @@ ul::after {
 	cursor: pointer;
 }
 
-
 /* 1. header */ 
 
 /*top section*/
@@ -130,6 +129,7 @@ ul::after {
 	font-size: 15px;
 	line-height: 20px;
 	color: #3c3c3c;
+	position: relative;
 }
 
 
@@ -622,4 +622,22 @@ ul::after {
 	background: url(../img/footer/icons.png) left bottom no-repeat;
 	width: 12px;
 	height: 16px;
+}
+
+
+/*animations*/
+
+.nav_border {
+	position: absolute;
+	width: 100%;
+	border: 2px solid #42b549;
+	left: 0;
+	right: 0;
+	bottom: -5px;
+	transition: .6s;	
+}
+
+.nav_element {
+	color: #42b549;
+	transition: .3s;
 }
