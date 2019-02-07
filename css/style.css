@@ -141,30 +141,58 @@ ul::after {
 
 .header__about {
 	align-items: center;
-	justify-content: center;
-	padding: 125px 0 177px 85px;
+	justify-content: space-around;
+	padding: 125px 0 177px 0;
 	text-transform: uppercase;
 	color: #fefefe;
 }
 
 .about__list {
-	flex-grow: 1;
+	/*flex-grow: 1;*/
 	text-align: center;
 	font-style: italic;
+	flex-basis: 300px;
 }
 
 /*about- points*/
 
 .about__point {
 	font-size: 1.250em;
+	position: relative;
 }
 
 .about__point:nth-child(2) {
 	margin: 105px 0 95px 0;
 }
 
+.first-point::before,
+.second-point::before,
+.third-point::before {
+	content: '';
+	position: absolute;
+	display: block;
+	width: 35px;
+	height: 35px;
+	top: 0px;
+	left: -35px;
+}
+
+.first-point::before {
+	background: url(../img/header/icon-1.png) center center no-repeat;
+	top: -10px;
+}
+
+.second-point::before {
+	background: url(../img/header/icon-2.png) center center no-repeat;
+}
+
+.third-point::before {
+	background: url(../img/header/icon-3.png) center center no-repeat;
+}
+
 .about__logo {
 	text-align: center;
+	/*flex-grow: 1;*/
 }
 
 .about__logo__abbrev,
@@ -188,6 +216,7 @@ ul::after {
 	padding: 15px 40px 15px 10px;
 	border-radius: 15px 0 15px 0;
 	margin: 10px 0;
+	display: inline-block;
 }
 
 .about__logo__description {
@@ -263,6 +292,7 @@ ul::after {
 }
 
 .functions-item__title {
+	position: relative;
 	font-size: 1em;
 	color: #3c3c3c;
 	font-weight: normal;
@@ -270,6 +300,31 @@ ul::after {
 
 .functions-item__title span {
 	font-weight: bold;
+}
+
+.first-title::before,
+.second-title::before,
+.third-title::before {
+	content: '';
+	width: 29px;
+	height: 29px;
+	display: block;
+	position: absolute;
+	background-size: 100%;
+	top: -5px;
+	left: -45px;
+}
+
+.first-title::before {
+	background: url(../img/function-section/icon-1.png) center center no-repeat;
+}
+
+.second-title::before {
+	background: url(../img/function-section/icon-2.png) center center no-repeat;
+}
+
+.third-title::before {
+	background: url(../img/function-section/icon-3.png) center center no-repeat;
 }
 
 .functions-item__text {
@@ -300,8 +355,9 @@ ul::after {
 }
 
 .download-section__get-started {
-	flex-basis: 33%;
+	flex-basis: 430px;
 	margin: 220px 0;
+	flex-direction: column;
 }
 
 .get-started__title {
@@ -319,17 +375,56 @@ ul::after {
 	color: #e5e7fc;
 }
 
+.get-started__buttons {
+	justify-content: space-between;
+}
+
+.get-started__outer-link {
+	height: 65px;
+	width: 200px;
+	border-radius: 10px;
+	background-size: 100%;
+}
+
+.get-started__outer-link:first-child {
+	background: url(../img/download-section/gplay.png) center center no-repeat;
+}
+
+.get-started__outer-link:last-child {
+	background: url(../img/download-section/istore.png) center center no-repeat;	
+}
+
 /* 5. news */
 
 .news {
 	justify-content: space-between;
 	padding: 90px 0;
+	position: relative;
+}
+
+.news::after {
+	content: '';
+	border: 25px solid transparent;
+	position: absolute;
+	border-bottom: 40px solid #fff;
+	border-right: 40px solid #fff;
+	bottom: -10px;
+	right: calc(50% - 40px);
+	transform: rotate(45deg);
+	z-index: 1;
 }
 
 .news-card {
 	padding: 6px;
 	position: relative;
 	flex-basis: 370px;
+	box-shadow: 0px 5px 15px 1px rgba(178,178,178,0.92);
+}
+
+.news-card__title,
+.news-card__text,
+.news-card__footer {
+	padding: 0 15px;
 }
 
 .news-card__image {
@@ -378,6 +473,8 @@ ul::after {
 	max-width: 630px;
 	width: 100%;
 	margin: 0 auto;
+	position: relative;
+	z-index: 0;
 }
 
 .contact__title,
@@ -492,8 +589,37 @@ ul::after {
 .footer-contacts__email,
 .footer-contacts__adress {
 	display: block;
+	position: relative;
 }
 
 .footer-contacts__email {
 	margin: 20px 0;
+}
+
+.footer-contacts__phones::before,
+.footer-contacts__email::before,
+.footer-contacts__adress::before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -25px;
+}
+
+.footer-contacts__phones::before {
+	background: url(../img/footer/icons.png) center top no-repeat;
+	width: 13px;
+	height: 15px;
+}
+
+.footer-contacts__email::before {
+	background: url(../img/footer/icons.png) center center no-repeat;
+	width: 15px;
+	height: 14px;
+}
+
+.footer-contacts__adress::before {
+	background: url(../img/footer/icons.png) left bottom no-repeat;
+	width: 12px;
+	height: 16px;
 }
