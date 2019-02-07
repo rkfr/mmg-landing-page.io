@@ -7,6 +7,14 @@
 	}
 }
 
+@media screen and (max-width: 870px) {
+
+	.download-section__wrapper {
+		background-position: 50% 50%;
+		background-size: auto 100%;
+	}
+}
+
 @media screen and (max-width: 730px) {
 
 	.function-section {
@@ -17,11 +25,6 @@
 	.functions-item {
 		min-width: 100%;
 		padding: 20px 35px;
-	}
-
-	.download-section__wrapper {
-		background-position: 50% 50%;
-		background-size: auto;
 	}
 
 	.news {
