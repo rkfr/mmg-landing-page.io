@@ -24,6 +24,8 @@ body::before,
 body::after {
 	margin: 0;
 	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
 }
 
 ul,
@@ -53,10 +55,6 @@ ul::after {
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
-}
-
-.grid {
-	display: grid;
 }
 
 .button {
@@ -98,6 +96,7 @@ ul::after {
 .header__top-section {
 	align-items: center;
 	justify-content: space-between;
+	font-size: 0.93em;
 }
 
 .header__top-section {
@@ -156,7 +155,9 @@ ul::after {
 
 /*about- points*/
 
-.about__point {}
+.about__point {
+	font-size: 1.250em;
+}
 
 .about__point:nth-child(2) {
 	margin: 105px 0 95px 0;
@@ -173,14 +174,15 @@ ul::after {
 }
 
 .about__logo__abbrev {
-	font-size: 80px;
+	font-size: 5em;
+	font-weight: bolder;
 	/*line-height: 0;*/
 	margin: 0;
 	padding: 0;
 }
 
 .about__logo__name {
-	font-size: 16px;
+	font-size: 1em;
 	color: #172592;
 	background: #fff;
 	padding: 15px 40px 15px 10px;
@@ -189,7 +191,8 @@ ul::after {
 }
 
 .about__logo__description {
-	font-size: 22px;
+	font-size: 1.375em;
+	font-weight: bold;
 }
 
 /* 2. slider */
@@ -216,11 +219,23 @@ ul::after {
 	padding: 60px 135px 150px 115px;
 }
 
-.content__overhead {}
+.content__overhead,
+.content__title {
+	color: #3c3c3c;
+}
 
-.content__title{}
+.content__overhead {
+	font-size: 1.56em;
+}
 
-.content__text{}
+.content__title{
+	font-size: 3.43em;
+}
+
+.content__text{
+	font-size: 1em;
+	color: #808080;
+}
 
 .slider__button {
 	background: #f4213a;
@@ -247,6 +262,20 @@ ul::after {
 	padding: 35px 45px 35px 70px;
 }
 
+.functions-item__title {
+	font-size: 1em;
+	color: #3c3c3c;
+	font-weight: normal;
+}
+
+.functions-item__title span {
+	font-weight: bold;
+}
+
+.functions-item__text {
+	font-size: 0.875em;
+	color: #7f7f7f;
+}
 
 /* 4. download section */
 
@@ -275,6 +304,21 @@ ul::after {
 	margin: 220px 0;
 }
 
+.get-started__title {
+	font-size: 2.188em;
+	font-weight: normal;
+}
+
+.get-started__title span {
+	font-weight: bold;
+}
+
+.get-started__text {
+	font-size: 1em;
+	line-height: 1.87em;
+	color: #e5e7fc;
+}
+
 /* 5. news */
 
 .news {
@@ -296,10 +340,14 @@ ul::after {
 
 .news-card__title {
 	margin: 35px 0 17px 0;
+	color: #3c3c3c;
+	font-size: 1em;
 }
 
 .news-card__text {
 	margin-bottom: 50px;
+	font-size: 0.875em;
+	color: #7f7f7f;
 }
 
 .news-card__footer {
@@ -308,11 +356,13 @@ ul::after {
 	right: 15px;
 	bottom: 15px;
 	justify-content: space-between;
+	font-size: 0.75em;
+	color: #a6a6a6;
 }
 
-.news-card__date {}
+/*.news-card__date {}*/
 
-.news-card__comment {}
+/*.news-card__comment {}*/
 
 /* 6. contact */
 
@@ -335,9 +385,20 @@ ul::after {
 	text-align: center;
 }
 
+.contact__title {
+	font-weight: normal;
+	font-size: 2.188em;
+}
+
+.contact__title span {
+	font-weight: bold;
+}
+
 .contact__text {
 	padding: 0;
 	margin: 28px 0 63px 0;
+	font-size: 1em;
+	color: #cacacc;
 }
 
 .contact__userdata-wrapper {
@@ -355,6 +416,7 @@ ul::after {
 .contact__message-input {
 	width: 100%;
 	padding: 18px 30px;
+	font-size: 0.93em;
 }
 
 /*.contact__email-label {}
@@ -398,12 +460,40 @@ ul::after {
 	flex-basis: 280px;
 }
 
+.footer-list__title {
+	font-size: 0.938em;
+	font-weight: bold;
+	margin-bottom: 25px;
+}
+
+.footer-list__item {
+	padding: 5px 0;
+	margin: 0;
+}
+
 .footer-list__item a {
 	color: #fff;
+	font-size: 0.938em;
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+	/*line-height: 1.313em;*/
+}
+
+.products__item {
+	text-transform: uppercase;
+}
+
+.footer-contacts {
+	font-size: 0.938em;
 }
 
 .footer-contacts__phones,
 .footer-contacts__email,
 .footer-contacts__adress {
 	display: block;
+}
+
+.footer-contacts__email {
+	margin: 20px 0;
 }
