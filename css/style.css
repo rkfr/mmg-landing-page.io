@@ -276,8 +276,8 @@ ul::after {
 /* 3. function section */
 
 .function-section__wrapper {
-	background: #faf7f7 url(../img/function-section/bg-img.png) 100% 50% no-repeat;
-	background-size: 70%;
+	background: #faf7f7 url(../img/function-section/bg-img.png) right 60% no-repeat;
+	background-size: auto 40%;
 }
 
 .function-section {
@@ -419,6 +419,12 @@ ul::after {
 	position: relative;
 	flex-basis: 370px;
 	box-shadow: 0px 5px 15px 1px rgba(178,178,178,0.92);
+	transition: transform .7s ease-in;
+}
+
+.news-card:hover {
+	transform: scale(1.018);
+	transition: transform .6s ease-out;
 }
 
 .news-card__title,
@@ -640,4 +646,11 @@ ul::after {
 .nav_element {
 	color: #42b549;
 	transition: .3s;
+}
+
+.functions-item__checked {
+	background: #fff;
+	border-radius: 10px;
+	box-shadow: -1px 4px 12px 2px #DBDADA;
+	transition: .5s ease;
 }
