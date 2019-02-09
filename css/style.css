@@ -37,6 +37,7 @@ ul::after {
 
 .max-layout-width {
 	max-width: 1440px;
+	min-width: 430px;
 }
 
 .max-content-width {
@@ -98,26 +99,38 @@ ul::after {
 	font-size: 0.93em;
 }
 
-.header__top-section {
-}
+/*.header__top-section {}*/
 
 .header__top-section__wrapper {
 	background: #fff;
+	justify-content: center;
+	vertical-align: center;
+}
+
+.nav-menu__accordeon-button {
+	display: none;
+	text-align: left;
+	background: #fff;
+	position: absolute;
+	top: 12px;
+	left: 41%;
+	color: #2c67b1;
 }
 
 .header__nav-menu__wrapper {
-	flex-basis: 530px;
 	margin-left: auto;
+	flex-basis: 530px;
+	justify-content: flex-end;
 }
 
 .nav-menu {
 	margin-right: 30px;
 	justify-content: space-between;
+	flex-basis: 530px;
 }
 
 .nav-menu__item {
 	padding: 35px 0;
-	/*flex: 1 1 auto;*/
 }
 
 
@@ -293,7 +306,7 @@ ul::after {
 /*.first-slide__content__title {}*/
 
 .first-slide__content__text {
-	margin-bottom: 42px;
+	margin-bottom: 48px;
 }
 
 .first-slide__slider__button {

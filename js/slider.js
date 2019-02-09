@@ -94,7 +94,7 @@ const data = {
 			text: 'View smart home'
 		}
 	}
-}
+};
 
 class Slider {
 

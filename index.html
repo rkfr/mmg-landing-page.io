@@ -8,9 +8,10 @@
 	<link rel="stylesheet" href="css/normilize.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/media.css">
-	<script src="js/nav-menu-hover.js" defer></script>
+	<!-- <script src="js/nav-menu-hover.js" defer></script> -->
 	<script src="js/ckecked-function.js" defer></script>
 	<script src="js/slider.js" defer></script>
+	<script src="js/accordeon.js" defer></script>
 </head>
 <body>
 
@@ -22,23 +23,26 @@
 			
 			<div class="header__top-section max-content-width flex">
 				<!-- company logo -->
-				<a href="#" class="header__logo"><img src="img/header/company-logo.png" alt="Company Logo" class="header__logo" width="155px" height="50px"><a href=""></a>
-				<nav class="header__nav-menu__wrapper">
+				<a href="#" class="header__logo__link"><img src="img/header/company-logo.png" alt="Company Logo" class="header__logo" width="155px" height="50px"></a>
+				<nav class="header__nav-menu__wrapper flex">
+					<div class="nav-menu__accordeon-button button" id="accordeon-menu">
+						Menu
+					</div>
 					<ul class="nav-menu flex" id="nav-menu">
 						<li class="nav-menu__item">
 							<a href="#" class="nav-menu__item-link">Home</a>
 						</li>
 						<li class="nav-menu__item">
-							<a href="#" class="nav-menu__item-link">News</a>
+							<a href="#news" class="nav-menu__item-link">News</a>
 						</li>
 						<li class="nav-menu__item">
-							<a href="#" class="nav-menu__item-link">Products</a>
+							<a href="#slider-wrapper" class="nav-menu__item-link">Products</a>
 						</li>
 						<li class="nav-menu__item">
-							<a href="#" class="nav-menu__item-link">Download</a>
+							<a href="#download" class="nav-menu__item-link">Download</a>
 						</li>
 						<li class="nav-menu__item">
-							<a href="#" class="nav-menu__item-link">Contact</a>
+							<a href="#contact" class="nav-menu__item-link">Contact</a>
 						</li>
 					</ul>
 				</nav>
@@ -72,22 +76,7 @@
 
 	<!-- slider section -->
 
-	<div class="slider-wrapper max-layout-width" id="slider-wrapper">
-		<!-- slides -->
-<!-- 	<div class="slider slider__first-slide max-layout-width flex">
-			<div class="slider__image first-slide__image"></div>
-			<div class="slider__content">
-				<div class="content__overhead">Our first product of the <span>IoT</span> is</div>
-				<h2 class="content__title">Bot-checking</h2>
-				<p class="content__text">
-					An efficient device for human resource manager
-					The best replacement for the traditional time attendance checking methods such as Finger print scanner, Face recognition machine...
-				</p>
-				<a href="#" class="button slider__button">View bot-checking</a>
-			</div>
-		</div> -->
-
-	</div>
+	<div class="slider-wrapper max-layout-width" id="slider-wrapper"></div>
 	
 	<!-- function section -->
 
@@ -120,7 +109,7 @@
 	</div>
 		<!-- download section -->
 
-	<div class="download-section__wrapper max-layout-width">
+	<div class="download-section__wrapper max-layout-width" id="download">
 		<div class="download-section max-content-width flex">
 			<div class="download-section__get-started">
 				<h3 class="get-started__title"><span>Download</span> to get started</h3>
@@ -139,7 +128,7 @@
 	
 	<!-- news section -->
 
-	<div class="news max-content-width flex">
+	<div class="news max-content-width flex" id="news" >
 		<!-- news cards -->
 		<div class="news-card">
 			<img src="img/news/first.jpg" alt="first news" class="news-card__image">
@@ -187,7 +176,7 @@
 
 	<!-- contact section -->
 
-	<div class="contact max-content-width">
+	<div class="contact max-content-width" id="contact">
 		
 		<form action="#" method="post" name="contact-with-us" class="contact-form">
 			<h2 class="contact__title"><span>Contact</span> with us</h2>
