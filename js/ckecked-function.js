@@ -17,15 +17,15 @@ class SelectBlock {
 		return e => {
 			const element = e.target;
 
-			if (!element.classList.contains( 'functions-item' ))
+			if (!element.closest( '.functions-item' ))
 				return;
 
-			if (!element.classList.contains( className )) {
+			if (!element.closest( '.functions-item' ).classList.contains( className )) {
 				for (let el of elements) {
 					el.classList.remove( className );
 				}
 
-				element.classList.add( className );
+				element.closest( '.functions-item' ).classList.add( className );
 			}
 		}
 	}
