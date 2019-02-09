@@ -37,7 +37,6 @@ ul::after {
 
 .max-layout-width {
 	max-width: 1440px;
-	min-width: 430px;
 }
 
 .max-content-width {
