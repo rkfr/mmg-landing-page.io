@@ -607,11 +607,21 @@ ul::after {
 	border-radius: 7px;
 }
 
-.contact-button {
+.contact-button__label {
 	display: block;
+	max-width: 112px;
+	height: 100%;
+	text-align: center;
 	margin: 0 auto;
+}
+
+.contact-button {
 	background: #17152b;
 	border: 1px solid #fff;
+}
+
+.contact .contact-button__label {
+	text-align: center;
 }
 
 .contact-button:hover {
@@ -651,7 +661,6 @@ ul::after {
 	font-weight: normal;
 	margin: 0;
 	padding: 0;
-	/*line-height: 1.313em;*/
 }
 
 .products__item {
