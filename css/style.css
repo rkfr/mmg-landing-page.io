@@ -224,53 +224,112 @@ ul::after {
 	font-weight: bold;
 }
 
+
+
 /* 2. slider */
+
+
 
 .slider-wrapper {
 	background: #fff;
 }
 
-.slider {}
+.slider {
+	justify-content: space-between;
+}
 
 .slider__image {
 	width: 100%;
 	height: auto;
-	flex: 1, 1, 49%;
-	background: url(../img/slider/first-slide/f-img.png) center right no-repeat;
+	flex-basis: 705px;
 	background-size: cover;
 }
 
-/*first slide*/
-.slider__first-slide {}
-
-.slider__content {
-	text-align: right;
-	padding: 60px 135px 150px 115px;
+.slide__content {
+	flex-basis: 470px;
+	padding: 60px 0 150px 0;
 }
 
-.content__overhead,
-.content__title {
+.slide__content__overhead {
 	color: #3c3c3c;
-}
-
-.content__overhead {
 	font-size: 1.56em;
+	text-transform: uppercase;
 }
 
-.content__title{
+.slide__content__overhead span {
+	font-weight: bold;
+	text-transform: none;
+}
+
+.slide__content__title {
+	color: #3c3c3c;
 	font-size: 3.43em;
+	text-transform: uppercase;
+	line-height: .88em;
+	margin: 20px 0 27px 0;
 }
 
-.content__text{
+.slide__content__text {
 	font-size: 1em;
 	color: #808080;
 }
 
-.slider__button {
+/*first slide*/
+
+.slider__first-slide {}
+
+.first-slide__image {
+	background: url(../img/slider/first-slide/f-img.png) center right no-repeat;
+	margin-right: 15px;
+}
+
+.first-slide__content {
+	text-align: right;
+	margin-right: 135px;
+}
+
+/*.first-slide__content__overhead {}*/
+
+/*.first-slide__content__title {}*/
+
+.first-slide__content__text {
+	margin-bottom: 42px;
+}
+
+.first-slide__slider__button {
 	background: #f4213a;
 }
 
 /*end first slide*/
+
+/*second slide*/
+
+/*.slider__second-slide {}*/
+
+.second-slide__image {
+	background: url(../img/slider/last-slide/l-img.png) center left no-repeat;
+	order: 1;
+	margin-left: 15px;
+}
+
+.second-slide__content {
+	text-align: left;
+	margin-left: 135px;
+}
+
+/*.second-slide__content__overhead {}*/
+
+/*.second-slide__content__title {}*/
+
+.second-slide__content__text {
+	margin-bottom: 48px;
+}
+
+.second-slide__slider__button {
+	background: #2c67b1;
+}
+
+/*end second slide*/
 
 
 /* 3. function section */
