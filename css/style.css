@@ -64,6 +64,7 @@ ul::after {
 	font-size: 14px;
 	color: #fff;
 	cursor: pointer;
+	transition: .6s ease;
 }
 
 /* 1. header */ 
@@ -98,8 +99,6 @@ ul::after {
 	font-size: 0.93em;
 }
 
-/*.header__top-section {}*/
-
 .header__top-section__wrapper {
 	background: #fff;
 	justify-content: center;
@@ -132,8 +131,6 @@ ul::after {
 	padding: 35px 0;
 }
 
-
-
 .nav-menu__item-link {
 	display: block;
 	padding: 0 5px;
@@ -144,10 +141,21 @@ ul::after {
 	position: relative;
 }
 
+.nav-menu__item-link:hover {
+	color: #42b549;
+}
+
 
 .header__button {
 	background: #2c67b1;
+	box-shadow: 2px 4px 24px -1px rgba(44,103,177,1);
 }
+
+.header__button:hover {
+	background: #f4213a;
+	box-shadow: 2px 4px 24px -1px rgba(244,33,58,1);
+}
+
 
 /* header-about section*/
 
@@ -300,23 +308,19 @@ ul::after {
 	margin-right: 135px;
 }
 
-/*.first-slide__content__overhead {}*/
-
-/*.first-slide__content__title {}*/
-
 .first-slide__content__text {
 	margin-bottom: 48px;
 }
 
 .first-slide__slider__button {
 	background: #f4213a;
+	box-shadow: 2px 4px 24px -1px rgba(244,33,58,1);
 }
 
-/*end first slide*/
-
-/*second slide*/
-
-/*.slider__second-slide {}*/
+.first-slide__slider__button:hover {
+	background: #2c67b1;
+	box-shadow: 2px 4px 24px -1px rgba(44,103,177,1);
+}
 
 .second-slide__image {
 	background: url(../img/slider/last-slide/l-img.png) center left no-repeat;
@@ -329,16 +333,18 @@ ul::after {
 	margin-left: 135px;
 }
 
-/*.second-slide__content__overhead {}*/
-
-/*.second-slide__content__title {}*/
-
 .second-slide__content__text {
 	margin-bottom: 48px;
 }
 
 .second-slide__slider__button {
 	background: #2c67b1;
+	box-shadow: 2px 4px 24px -1px rgba(44,103,177,1);
+}
+
+.second-slide__slider__button:hover {
+	background: #f4213a;
+	box-shadow: 2px 4px 24px -1px rgba(244,33,58,1);
 }
 
 /*end second slide*/
@@ -532,10 +538,6 @@ ul::after {
 	color: #a6a6a6;
 }
 
-/*.news-card__date {}*/
-
-/*.news-card__comment {}*/
-
 /* 6. contact */
 
 .contact {
@@ -593,12 +595,6 @@ ul::after {
 	font-size: 0.93em;
 }
 
-/*.contact__email-label {}
-
-.contact__email-input {}
-
-.contact__message-label {}*/
-
 .contact__message-input {
 	padding: 30px;
 	margin: 20px 0 30px 0;
@@ -616,6 +612,10 @@ ul::after {
 	margin: 0 auto;
 	background: #17152b;
 	border: 1px solid #fff;
+}
+
+.contact-button:hover {
+	background: #f4213a;
 }
 
 /* 7. footer */

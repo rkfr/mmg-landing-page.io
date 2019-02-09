@@ -96,10 +96,18 @@
 		right: 15px;
 		color: #2c67b1;
 		background: #fff;
+		box-shadow: none;
+		border: 1px solid #2c67b1;
+	}
+
+	.header__button:hover {
+		background: #fff;
+		box-shadow: none;
 	}
 
 	.nav-menu__accordeon-button {
 		display: block;
+		border: 1px solid #2c67b1;
 	}
 
 	.header__nav-menu__wrapper {
@@ -237,5 +245,28 @@
 
 	.download-section__wrapper {
 		background-position: 55% 50%;
+	}
+}
+
+@media screen and (max-width: 485px) {
+
+	.header__button,
+	.nav-menu__accordeon-button {
+		border: none;
+	}
+}
+
+@media screen and (max-width: 420px) {
+
+	body {
+		min-width: 298px;
+	}
+
+	.button {
+		padding: 13px 3px;
+	}
+
+	.nav-menu__accordeon-button {
+		left: 60%;
 	}
 }
