@@ -734,3 +734,66 @@ ul::after {
 	box-shadow: -1px 4px 12px 2px #DBDADA;
 	transition: .5s ease;
 }
+
+@keyframes changeSlide {
+
+	0% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+
+	10% {
+		opacity: .5;
+		transform: translateX(-40%);
+	}
+
+	20% {
+		opacity: 0;
+		transform: translateX(-80%);
+	}
+
+	30% {
+		opacity: 0;
+		transform: translateX(-120%);
+	}
+
+	40% {
+		opacity: 0;
+		transform: translateX(-100%);
+	}
+
+	50% {
+		opacity: 0%;
+		transform: translateX(120%);
+	}
+
+	60% {
+		opacity: 0;
+		transform: translateX(100%);
+	}
+
+	70% {
+		opacity: 0;
+		transform: translateX(80%);	
+	}
+
+	80% {
+		opacity: .5;
+		transform: translateX(40%);
+	}
+
+	90% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+
+	100% {
+		transform: translate(0);
+	}
+
+}
+
+.changeSlide {
+	animation: changeSlide 1s ease-out;
+	animation-iteration-count: 1;
+}

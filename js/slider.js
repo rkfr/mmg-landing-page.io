@@ -102,17 +102,18 @@ class Slider {
 		const slides = Object.values(data);
 		container.append(this.render(slides[0]));
 		
-		let i = 0;
+		let i = 1;
 		const update = () => {
 			container.innerText = '';
 			if (i === slides.length)
 				i = 0;
-
 			container.append(this.render(slides[i]));
+			this.addClass(container, 'changeSlide');
+			this.removeClass(container, 'changeSlide', 6700);
 			i++;	
 		}
 		
-		setInterval( update, 4000);
+		setInterval( update, 7000);
 	}
 
 	render(slide) {
@@ -150,6 +151,22 @@ class Slider {
 			node.innerHTML = text;
 
 		return node;
+	}
+
+	addClass(element, className, time) {
+		if (time) {
+			setTimeout( () => element.classList.add( className ), time );
+		}
+		else
+			element.classList.add( className );
+	}		
+
+	removeClass(element, className, time) {
+		if (time) {
+			setTimeout( () => element.classList.remove( className ), time );
+		}
+		else
+			element.classList.remove( className );
 	}
 }
 
