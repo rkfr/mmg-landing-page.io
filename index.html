@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>MMG</title>
-	<meta description="'MMG' landing page">
+	<meta name="description" content="'MMG' landing page">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<link rel="stylesheet" href="css/normilize.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -184,16 +184,17 @@
 				Contact us by phone or gmail to order new services, track orders and get customer service or tech support. 
 			</p>
 			<div class="contact__userdata-wrapper flex">
-				<label class="contact__username-label" for="contact__username">
-					<input type="text" id="contact__username" placeholder="Your Name" class="contact__username-input">
+				<label class="contact__username-label">
+					<input type="text" placeholder="Your Name" class="contact__username-input">
 				</label>
-				<label class="contact__email-label" for="contact__email">
-					<input type="email" placeholder="Email Adress" class="contact__email-input" id="contact__email">
+				<label class="contact__email-label">
+					<input type="email" placeholder="Email Adress" class="contact__email-input">
 				</label>
 			</div>
+			<label for="contact-text-area"></label>
 			<textarea name="contact-text-area" id="contact-text-area" cols="30" rows="10" class="contact__message-input" placeholder="Message..."></textarea>
-			<label class="contact-button__label" for="contact-button">
-				<input type="submit" value="send" class="button contact-button" id="contact-button">
+			<label class="contact-button__label">
+				<input type="submit" value="send" class="button contact-button">
 			</label>
 		</form>
 
