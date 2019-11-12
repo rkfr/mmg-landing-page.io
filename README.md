@@ -1,1 +1,1 @@
-[demo](https://rkfr.github.io/mmg_layout_github.io/)
+[demo](https://rkfr.github.io/mmg-landing-page.io/)
